@@ -36,7 +36,7 @@ class User extends ResourceController{
                 'success'=>'User already exists'
             )
             );
-            return $this->failResourceExists($response);
+            return $this->failResourceExists();
         } else {
             $this->model->insert($data);
             $response = array(
